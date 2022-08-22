@@ -24,7 +24,12 @@
 
                 <ul>
                     <!-- v-for every country in the italy cities array -->
-                    <li></li>
+                    
+                        <li v-for="city in cities" v-if="city.country === 'Italy'">
+                            {{ city.name }}
+                            <img :src="city.picture" :alt="city.name" />
+                        </li>
+                    
                 </ul>
 
             </section>
@@ -35,7 +40,10 @@
 
                 <ul>
                     <!-- li v-for every country in the usa cities array -->
-                    <li></li>
+                    <li v-for="city in cities" v-if="city.country === 'United States'">
+                        {{ city.name }}
+                        <img :src="city.picture" :alt="city.name" />
+                    </li>
                 </ul>
 
             </section>
