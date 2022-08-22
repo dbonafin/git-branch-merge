@@ -3,7 +3,7 @@
         [
             'name' => 'Pisa',
             'country' => 'Italy',
-            'picture' => `https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Pisa_-_veduta_dall%27aereo_4.JPG/1024px-Pisa_-_veduta_dall%27aereo_4.JPG`
+            'picture' => `https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Pisa_-_veduta_dall%27aereo_4.JPG/1024px-Pisa_-_veduta_dall%27aereo_4.jpg`
         ],
         [
             'name' => 'Roma',
@@ -57,7 +57,7 @@
         ]
     ];
     header('Content-Type: application/json');
-    json_encode($cities);
+    echo json_encode($cities);
 
-    var_dump($cities);
+    // var_dump($cities);
 ?>
