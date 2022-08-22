@@ -36,7 +36,6 @@
 
           <ul>
             <!-- v-for every country in the italy cities array -->
-
             <li v-for="city in cities" v-if="city.country === 'Italy'">
               {{ city.name }}
               <img :src="city.picture" :alt="city.name" />
