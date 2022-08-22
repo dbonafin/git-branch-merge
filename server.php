@@ -57,7 +57,7 @@
         ]
     ];
     header('Content-Type: application/json');
-    json_encode($cities);
+    echo json_encode($cities);
 
-    var_dump($cities);
+    // var_dump($cities);
 ?>
